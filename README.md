@@ -1,14 +1,17 @@
 # 🖼️ PDF to Image Converter – Free, Fast & Secure (Hosted at pdftoimages.github.io)
 
-**Convert PDF files into high-quality JPG or PNG images** in seconds using this free and open-source **PDF to Image Converter**. No signup, no ads, no watermarks – just fast and accurate PDF conversion, all in your browser.
+**Convert PDF files into high-quality JPG or PNG images** in seconds using this free and open-source **PDF to Image Converter**. No signup, no ads, no watermarks – just fast and accurate PDF conversion.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<!-- You can add more badges as needed, such as build or deployment status. -->
 
 🌐 **Live Tool**: [https://pdftoimages.github.io](https://pdftoimages.github.io)
 
 ---
 
-## 📰 Introduction – Why Convert PDF to Image Converter?
+## 📰 Introduction – Why Convert PDF to Images?
 
-PDFs are great for documents, but they're not ideal for quick sharing, previews, or social media. That’s where **PDF to image conversion** becomes useful.
+PDFs are great for documents, but they're not ideal for quick sharing as images, previews, or on social media. That’s where **PDF to image conversion** becomes useful.
 
 By turning each page of a PDF into an image (JPG or PNG), you can:
 
@@ -31,6 +34,15 @@ This tool lets you do all of that — with **no upload limits** and **no privacy
 - Choose output format: JPG or PNG
 - Preview each page
 - Download all pages individually or as a ZIP
+
+---
+
+## 📷 Screenshots
+
+<!-- Add screenshots or a GIF here to demonstrate the tool in action. Example below. Replace with your own images. -->
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
+<!-- If you have a GIF, you can add: ![Demo GIF](screenshots/demo.gif) -->
 
 ---
 
@@ -59,7 +71,7 @@ This tool is perfect for:
 
 ---
 
-## 📦 How It Works Pdf to Image Converter Tools?
+## 📦 How Does the PDF to Image Converter Work?
 
 This tool uses **JavaScript and PDF.js** to convert PDF pages into canvas-rendered images right in your browser. No files are uploaded to a server, so your data stays completely private.
 
@@ -77,14 +89,40 @@ Optionally, you can extend the tool with a **Node.js backend** (e.g., for larger
 
 ## 🔗 SEO Keywords
 
-> PDF to Image Converter · Convert PDF to JPG Online · PDF to PNG Free Tool · PDF Image Extractor · PDF to Photo · Online PDF to Image Generator · JPG from PDF Pages · Browser PDF Converter · Free PDF Tools · GitHub PDF to Image
+> PDF to Image Converter · Convert PDF to JPG Online · PDF to PNG Free Tool · PDF Image Extractor · PDF to Photo · Online PDF to Image Generator · JPG from PDF Pages · Browser PDF Converter · PDF Page to Photo
 
 ---
 
 ## 💻 Local Development
 
-Clone the repo:
+Clone the repo and start a local web server to test the app:
 
 ```bash
 git clone https://github.com/yourusername/pdftoimages.github.io.git
 cd pdftoimages.github.io
+# Serve index.html with your preferred local server, for example:
+npx serve .
+```
+Or simply open `index.html` in your browser for most use cases.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or pull request with your suggestions or improvements.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<!-- End of Suggestions for Improvement additions. -->
