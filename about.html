@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PDFtoimages | Free PDF to Image Converter</title>
+    <meta name="description" content="Learn about PDFtoimages - your trusted free online PDF to image converter. Discover our mission, features, and commitment to privacy and quality.">
+    <style>
+        :root {
+            --primary-color: #5D5FEF;
+            --primary-light: #7879F1;
+            --primary-dark: #4A4AE5;
+            --secondary-color: #FF7A50;
+            --secondary-light: #FF9776;
+            --secondary-dark: #E56A45;
+            --success-color: #22C55E;
+            --light-bg: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --border-color: #E5E7EB;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1F2937;
+            text-decoration: none;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            color: #4B5563;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #F3F4F6;
+        }
+
+        .nav-link.active {
+            color: #3B82F6;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: var(--border-radius);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.8;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-section {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .content-section h2 {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .content-section h3 {
+            color: var(--text-primary);
+            font-size: 24px;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+
+        .content-section p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 20px;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
+            color: white;
+            text-align: center;
+            padding: 50px 40px;
+            border-radius: var(--border-radius);
+            margin: 40px 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .cta-section p {
+            color: white;
+            opacity: 0.9;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: white;
+            color: var(--secondary-color);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer Styles */
+        .site-footer {
+            background-color: #F9FAFB;
+            padding: 60px 40px 30px;
+            text-align: center;
+            margin-top: 60px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .footer-logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-tagline {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #4B5563;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-link {
+            color: #4B5563;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: #3B82F6;
+        }
+
+        .copyright {
+            color: #6B7280;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .site-header {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            
+            .logo-container {
+                margin-bottom: 15px;
+            }
+            
+            .main-nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-content {
+                padding: 0 15px;
+            }
+            
+            .page-header {
+                padding: 40px 20px;
+            }
+            
+            .page-header h1 {
+                font-size: 32px;
+            }
+            
+            .content-section {
+                padding: 25px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-nav {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo-container">
+            <div class="logo-img">📄</div>
+            <span class="logo-text">PDFtoimages</span>
+        </a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="privacy.html" class="nav-link">Privacy</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1>About PDFtoimages</h1>
+            <p>Your trusted partner for professional PDF to image conversion</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Our Mission</h2>
+            <p>At PDFtoimages, we believe that document conversion should be simple, secure, and accessible to everyone. Our mission is to provide a reliable, free online tool that transforms PDF documents into high-quality images without compromising on privacy or performance.</p>
+            
+            <p>We understand the importance of maintaining document integrity while making content more versatile and shareable. That's why we've developed a powerful conversion engine that preserves the original quality of your documents while offering the flexibility of multiple image formats.</p>
+
+            <h3>What Makes Us Different</h3>
+            <p>Unlike many online converters that require file uploads to remote servers, our tool processes everything locally in your browser. This approach ensures maximum privacy and security for your sensitive documents while delivering professional-grade results.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Secure</h3>
+                    <p>All processing happens in your browser. Your files never leave your device, ensuring complete privacy and security.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Advanced algorithms ensure quick conversion without sacrificing quality. Most documents convert in seconds.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>High Quality</h3>
+                    <p>Maintain original document quality with customizable settings for different use cases and requirements.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works perfectly on all devices - desktop, tablet, and mobile. Convert documents anywhere, anytime.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Multiple Formats</h3>
+                    <p>Support for JPG, PNG, and WebP formats with quality settings optimized for different applications.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✂️</div>
+                    <h3>Page Editing</h3>
+                    <p>Rotate, copy, delete, and rearrange pages before conversion to get exactly what you need.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Our Story</h2>
+            <p>PDFtoimages was born from the frustration of finding reliable, secure PDF conversion tools. As content creators and professionals ourselves, we experienced firsthand the challenges of working with PDF documents in digital workflows.</p>
+            
+            <p>Traditional online converters often required uploading sensitive documents to unknown servers, raising privacy concerns. Desktop software was expensive and often overly complex for simple conversion tasks. We saw an opportunity to create something better.</p>
+            
+            <p>Leveraging modern web technologies, we developed a solution that runs entirely in the browser, eliminating security concerns while delivering professional results. Since our launch, we've helped millions of users convert their documents safely and efficiently.</p>
+
+            <h3>Our Commitment</h3>
+            <p>We're committed to keeping PDFtoimages free, secure, and constantly improving. Our development team regularly updates the tool with new features and optimizations based on user feedback and emerging web standards.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Usage Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">2M+</span>
+                    <div class="stat-label">Documents Converted</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">500K+</span>
+                    <div class="stat-label">Happy Users</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">99.9%</span>
+                    <div class="stat-label">Uptime</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">0</span>
+                    <div class="stat-label">Data Breaches</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Convert Your PDFs?</h2>
+            <p>Join millions of users who trust PDFtoimages for their document conversion needs.</p>
+            <a href="index.html" class="btn">Start Converting Now</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-logo-container">
+            <div class="logo-img">📄</div>
+            <span class="logo-text">PDFtoimages</span>
+        </div>
+        <p class="footer-tagline">
+            Professional PDF to image conversion tools with advanced features for businesses, educators, and content creators. Convert PDF files to high-quality JPG, PNG, and WebP images instantly.
+        </p>
+        <nav class="footer-nav">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="privacy.html" class="footer-link">Privacy</a>
+            <a href="terms.html" class="footer-link">Terms</a>
+        </nav>
+        <p class="copyright">© 2025 PDFtoimages. All rights reserved.</p>
+    </footer>
+</body>
+</html>
