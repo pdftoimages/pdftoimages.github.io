@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PDFtoimages | Your Data Security & Privacy</title>
+    <meta name="description" content="Learn about PDFtoimages privacy policy, data protection measures, and how we keep your documents secure during conversion.">
+    <style>
+        :root {
+            --primary-color: #5D5FEF;
+            --primary-light: #7879F1;
+            --primary-dark: #4A4AE5;
+            --secondary-color: #FF7A50;
+            --secondary-light: #FF9776;
+            --secondary-dark: #E56A45;
+            --success-color: #22C55E;
+            --light-bg: #F9FAFB;
+            --card-bg: #FFFFFF;
+            --text-primary: #1F2937;
+            --text-secondary: #6B7280;
+            --border-color: #E5E7EB;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1F2937;
+            text-decoration: none;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-link {
+            color: #4B5563;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #F3F4F6;
+        }
+
+        .nav-link.active {
+            color: #3B82F6;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: var(--border-radius);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.8;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header p {
+            font-size: 20px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-section {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .content-section h2 {
+            color: var(--primary-color);
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .content-section h3 {
+            color: var(--text-primary);
+            font-size: 22px;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+
+        .content-section p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .content-section ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .content-section li {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ECFDF5, #D1FAE5);
+            border: 1px solid #A7F3D0;
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .highlight-box h3 {
+            color: var(--success-color);
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .highlight-box p {
+            color: #065F46;
+            margin-bottom: 0;
+        }
+
+        .last-updated {
+            background: var(--light-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .last-updated p {
+            color: var(--text-secondary);
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Footer Styles */
+        .site-footer {
+            background-color: #F9FAFB;
+            padding: 60px 40px 30px;
+            text-align: center;
+            margin-top: 60px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .footer-logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-tagline {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #4B5563;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-link {
+            color: #4B5563;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .footer-link:hover {
+            color: #3B82F6;
+        }
+
+        .copyright {
+            color: #6B7280;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .site-header {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            
+            .logo-container {
+                margin-bottom: 15px;
+            }
+            
+            .main-nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-content {
+                padding: 0 15px;
+            }
+            
+            .page-header {
+                padding: 40px 20px;
+            }
+            
+            .page-header h1 {
+                font-size: 32px;
+            }
+            
+            .content-section {
+                padding: 25px;
+            }
+            
+            .footer-nav {
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo-container">
+            <div class="logo-img">📄</div>
+            <span class="logo-text">PDFtoimages</span>
+        </a>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="privacy.html" class="nav-link active">Privacy</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <h1>Privacy Policy</h1>
+            <p>Your privacy and data security are our top priorities</p>
+        </div>
+
+        <div class="last-updated">
+            <p><strong>Last Updated:</strong> January 20, 2025</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>🔒 Your Files Never Leave Your Device</h3>
+            <p>PDFtoimages processes all conversions locally in your browser. Your documents are never uploaded to our servers, ensuring complete privacy and security for your sensitive files.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Introduction</h2>
+            <p>At PDFtoimages ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use our PDF to image conversion service.</p>
+            
+            <p>Our service is designed with privacy-by-design principles, meaning that your documents and personal data remain secure throughout your interaction with our platform.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Information We Collect</h2>
+            
+            <h3>Personal Information</h3>
+            <p>We collect minimal personal information, and only when you voluntarily provide it:</p>
+            <ul>
+                <li><strong>Contact Information:</strong> When you contact us through our contact form, we collect your name and email address to respond to your inquiry.</li>
+                <li><strong>Communication Records:</strong> We maintain records of communications for customer support purposes.</li>
+            </ul>
+
+            <h3>Technical Information</h3>
+            <p>We automatically collect certain technical information to improve our service:</p>
+            <ul>
+                <li><strong>Browser Information:</strong> Browser type, version, and capabilities</li>
+                <li><strong>Device Information:</strong> Operating system, device type, and screen resolution</li>
+                <li><strong>Usage Analytics:</strong> Pages visited, time spent on site, and feature usage patterns</li>
+                <li><strong>Error Logs:</strong> Technical errors to help us improve the service</li>
+            </ul>
+
+            <h3>Documents and Files</h3>
+            <p><strong>Important:</strong> Your PDF files and converted images are processed entirely within your browser. We do not collect, store, or have access to your documents at any time.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>How We Use Your Information</h2>
+            
+            <p>We use the collected information for the following purposes:</p>
+            <ul>
+                <li><strong>Service Provision:</strong> To provide and maintain our PDF conversion service</li>
+                <li><strong>Customer Support:</strong> To respond to your inquiries and provide technical assistance</li>
+                <li><strong>Service Improvement:</strong> To analyze usage patterns and improve our features</li>
+                <li><strong>Security:</strong> To monitor for and prevent security threats</li>
+                <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Data Processing and Storage</h2>
+            
+            <h3>Local Processing</h3>
+            <p>All PDF conversion occurs locally in your browser using JavaScript and Web APIs. Your files never leave your device, providing maximum security and privacy.</p>
+            
+            <h3>Data Retention</h3>
+            <ul>
+                <li><strong>Contact Information:</strong> Retained for up to 2 years for customer support purposes</li>
+                <li><strong>Analytics Data:</strong> Anonymized usage data retained for up to 1 year</li>
+                <li><strong>Error Logs:</strong> Technical logs retained for up to 6 months</li>
+                <li><strong>Your Documents:</strong> Never stored on our servers</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Third-Party Services</h2>
+            
+            <p>We use minimal third-party services to operate our website:</p>
+            <ul>
+                <li><strong>Analytics:</strong> We may use privacy-focused analytics tools to understand how users interact with our service</li>
+                <li><strong>CDN Services:</strong> Content delivery networks to ensure fast loading times</li>
+                <li><strong>Error Monitoring:</strong> Services to track and resolve technical issues</li>
+            </ul>
+            
+            <p>All third-party services are selected based on their privacy practices and GDPR compliance.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Cookies and Local Storage</h2>
+            
+            <h3>Essential Cookies</h3>
+            <p>We use minimal cookies and local storage for essential functionality:</p>
+            <ul>
+                <li><strong>Preference Storage:</strong> Remember your format and quality preferences</li>
+                <li><strong>Session Management:</strong> Maintain your conversion session</li>
+                <li><strong>Security:</strong> Protect against security threats</li>
+            </ul>
+            
+            <h3>Analytics Cookies</h3>
+            <p>With your consent, we may use analytics cookies to improve our service. You can opt out at any time through your browser settings.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Your Privacy Rights</h2>
+            
+            <p>Under applicable privacy laws, including GDPR and CCPA, you have the following rights:</p>
+            <ul>
+                <li><strong>Access:</strong> Request information about personal data we hold about you</li>
+                <li><strong>Rectification:</strong> Request correction of inaccurate personal data</li>
+                <li><strong>Erasure:</strong> Request deletion of your personal data</li>
+                <li><strong>Portability:</strong> Request transfer of your data to another service</li>
+                <li><strong>Objection:</strong> Object to processing of your personal data</li>
+                <li><strong>Restriction:</strong> Request restriction of processing</li>
+            </ul>
+            
+            <p>To exercise these rights, please contact us at <strong>privacy@pdftoimages.com</strong>.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Data Security</h2>
+            
+            <p>We implement appropriate technical and organizational measures to protect your information:</p>
+            <ul>
+                <li><strong>Encryption:</strong> All data transmission is encrypted using HTTPS</li>
+                <li><strong>Access Controls:</strong> Limited access to personal data on a need-to-know basis</li>
+                <li><strong>Regular Audits:</strong> Regular security assessments and updates</li>
+                <li><strong>Incident Response:</strong> Procedures for handling potential data breaches</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>International Data Transfers</h2>
+            
+            <p>As our service processes data locally in your browser, international data transfers are minimal. Any necessary transfers are protected by appropriate safeguards such as:</p>
+            <ul>
+                <li>Standard Contractual Clauses approved by the European Commission</li>
+                <li>Adequacy decisions by relevant data protection authorities</li>
+                <li>Other legally recognized transfer mechanisms</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Children's Privacy</h2>
+            
+            <p>Our service is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Changes to This Privacy Policy</h2>
+            
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will:</p>
+            <ul>
+                <li>Post the updated policy on our website</li>
+                <li>Update the "Last Updated" date at the top of this policy</li>
+                <li>Notify users of significant changes through our website</li>
+            </ul>
+            
+            <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Contact Information</h2>
+            
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+            
+            <p><strong>Email:</strong> privacy@pdftoimages.com<br>
+            <strong>Subject Line:</strong> Privacy Policy Inquiry</p>
+            
+            <p>We will respond to your inquiry within 30 days of receipt.</p>
+        </div>
+
+        <div class="highlight-box">
+            <h3>🛡️ Your Trust Matters</h3>
+            <p>We are committed to maintaining the highest standards of privacy and security. If you have any concerns about how we handle your information, please don't hesitate to reach out to us.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-logo-container">
+            <div class="logo-img">📄</div>
+            <span class="logo-text">PDFtoimages</span>
+        </div>
+        <p class="footer-tagline">
+            Professional PDF to image conversion tools with advanced features for businesses, educators, and content creators. Convert PDF files to high-quality JPG, PNG, and WebP images instantly.
+        </p>
+        <nav class="footer-nav">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="privacy.html" class="footer-link">Privacy</a>
+            <a href="terms.html" class="footer-link">Terms</a>
+        </nav>
+        <p class="copyright">© 2025 PDFtoimages. All rights reserved.</p>
+    </footer>
+</body>
+</html>
